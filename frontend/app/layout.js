@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "@trussworks/react-uswds/lib/uswds.css";
 import "@trussworks/react-uswds/lib/index.css";
 import "./globals.css";
+import { FormDataProvider } from "./formsaver";
 // select language
 import { LanguageProvider } from "@/components/LanguageProvider";
 
@@ -28,7 +29,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider><FormDataProvider>{children}</FormDataProvider></LanguageProvider>
       </body>
     </html>
   );

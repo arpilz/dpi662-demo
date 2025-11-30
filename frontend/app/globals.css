@@ -31,3 +31,7 @@ body {
   flex-wrap: nowrap;
   white-space: nowrap;
 }
+
+.usa-date-picker__external-input {
+  @apply rounded-md;
+}

@@ -43,9 +43,10 @@ export default function VisaPickerPage() {
 
           <p className="margin-top-0 margin-bottom-3 font-sans-sm">
             {/* Choose the visa category that best matches your travel purpose. */}
-            Choose the visa category that best matches your travel purpose.
+            {t('select_type_subtitle')}
           </p>
 
+          {/* grid of visas to pick from (in this demo, they all lead to the same form) */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-black">
             <FormSelector title={t('tourbiz')} description={t('tourbiz_desc')} href="/application/personal-info" icon="/airplane.svg" />
             <FormSelector title={t('student')}description={t('student_desc')} href="/application/personal-info" icon="/mortarboard.svg" />
@@ -54,18 +55,20 @@ export default function VisaPickerPage() {
             <FormSelector title={t('fiance')} description={t('fiance_desc')} href="/application/personal-info" icon="/heart.svg" />
             <FormSelector title={t('intracomp')} description={t('intracomp_desc')} href="/application/personal-info" icon="/buildings.svg" />
           </div>
-
+        
+          {/* hint for user */}
           <div className="bg-primary-lighter border border-primary radius-lg padding-2 md:padding-3 margin-top-4">
               <div>
                 <p className="margin-top-0 margin-bottom-0 font-sans-sm text-primary-dark">
                   {/* Need help choosing? */}
-                  <b>Need help choosing? </b> Visit our <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/all-visa-categories.html" className="underline">visa wizard tool</a> or contact the nearest U.S. embassy or consulate for guidance.
+                  <b>Need help choosing? </b> Visit our <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/all-visa-categories.html" target="_blank" className="underline">visa wizard tool</a> or contact the nearest U.S. embassy or consulate for guidance.
                 </p>
               </div>
           </div>
 
           
         </SummaryBox>
+        {/* back button */}
         <Link href="/"><Button
               type="button"
               outline
