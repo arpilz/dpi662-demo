@@ -1,4 +1,3 @@
-// components/AgencyHeader.js
 "use client";
 
 import { useLanguage } from "@/components/LanguageProvider";
@@ -39,7 +38,7 @@ export default function AgencyHeader({
           </div>
 
           {/* Language selector */}
-          <div className="mt-3 md:mt-0">
+          <div className="mt-3 md:mt-0 display-flex flex-align-center flex-justify-center">
             <AppLanguageSelector />
           </div>
 

@@ -1,4 +1,3 @@
-// components/AppLanguageSelector.js
 "use client";
 
 import { useLanguage } from "@/components/LanguageProvider";
