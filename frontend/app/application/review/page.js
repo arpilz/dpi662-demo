@@ -29,7 +29,7 @@ export default function ReviewPage() {
 
   const travelDetailFields = [
     { label: "purpose_of_travel", value: formData.purposeOfTravel },
-    { label: "travel_dates", value: (formData.arrivalDate + " - " + formData.departureDate === " - ") ? "12/15/2025 - 11/11/2026" : formData.arrivalDate + " - " + formData.departureDate === " - " },
+    { label: "travel_dates", value: (formData.arrivalDate + " - " + formData.departureDate === " - ") ? "12/15/2025 - 11/11/2026" : formData.arrivalDate + " - " + formData.departureDate },
     { label: "us_address", value: formData.addressStay },
   ];
 

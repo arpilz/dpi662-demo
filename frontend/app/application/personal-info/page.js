@@ -27,15 +27,33 @@ export default function PersonalInfoPage() {
 
   const nationalities = [
     "",
-    "Canada",
-    "Mexico",
-    "United Kingdom",
+    "Argentina",
     "Australia",
+    "Brazil",
+    "Canada",
+    "China",
+    "Colombia",
+    "France",
     "Germany",
     "India",
-    "China",
+    "Ireland",
+    "Israel",
+    "Italy",
+    "Japan",
+    "Mexico",
+    "Netherlands",
+    "Philippines",
+    "Saudi Arabia",
+    "South Africa",
+    "South Korea",
+    "Spain",
+    "Sweden",
+    "Switzerland",
+    "Turkey",
+    "United Arab Emirates",
+    "United Kingdom",
     "Other",
-  ];
+];
 
 
   const [errors, setErrors] = useState({});

@@ -32,6 +32,7 @@ const defaultData = {
 export function FormDataProvider({ children }) {
   const [formData, setFormData] = useState(defaultData);
 
+  const setAll = (newData) => setFormData(prev => ({ ...prev, ...newData }));
   // Load from localStorage on first mount
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -59,6 +60,7 @@ export function FormDataProvider({ children }) {
   const value = {
     formData,
     setField,
+    setAll,
     resetForm: () => setFormData(defaultData),
   };
 

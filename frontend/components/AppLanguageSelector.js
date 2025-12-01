@@ -24,6 +24,10 @@ export default function AppLanguageSelector() {
         <option value="en">English</option>
         <option value="es">Español (Spanish)</option>
         <option value="cn">中文 (Chinese)</option>
+        <option value="fr">Français (French)</option>
+        <option value="de">Deutsch (German)</option>
+        <option value="ar">العربية (Arabic)</option>
+        <option value="hi">हिन्दी (Hindi)</option>
       </select>
     </div>
   );

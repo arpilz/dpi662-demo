@@ -12,7 +12,7 @@ import { useFormData } from "@/app/formsaver";
 export default function VisaPickerPage() {
 
   const { t } = useLanguage();
-  const { formData, setField } = useFormData();
+  const { resetForm, setField } = useFormData();
   
   const steps = [
     { id: "visa_type", label: t("visa_type") },
@@ -23,6 +23,7 @@ export default function VisaPickerPage() {
   ];
 
   const handleVisaSelect = (visaKey) => {
+    resetForm(); // resets every other part of the form
     setField("visaType", visaKey);
   };
 
