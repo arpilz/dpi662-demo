@@ -55,7 +55,6 @@ export const translations = {
     ppn_len_error: "Passport number should be 6–20 letters or numbers.",
     email_error: "Enter a valid email address.",
     phone_error: "Enter a valid phone number.",
-
     req_field: "indicates a required field",
     first_name: "First Name",
     first_name_p: "Enter your first name",
@@ -113,8 +112,24 @@ export const translations = {
     travel_purpose_hint: "A clear scan or image of a travel support document (e.g. invitation letters, hotel bookings)",
     findoc: "Financial Document",
     findoc_hint: "A clear scan or image of a bank statement or other proof of financial support",
-
-
+    // review
+    review_title: "Review your application",
+    review_subtitle: "Please review all information carefully before submitting. You can go back to edit any section.",
+    affirmation: "I affirm that all information provided in this application is true and correct to the best of my knowledge. I understand that any false statements may result in the denial of my visa application and may affect future applications.",
+    submit: "Submit Application",
+    full_name: "Full Name",
+    travel_dates: "Travel Dates",
+    us_address: "U.S. Address",
+    // completion
+    success_title: "Application Submitted Successfully!",
+    success_subtitle: "Your visa application has been received and is being processed.",
+    app_num: "Application number",
+    save_num: "Please save this number for tracking your application",
+    next_steps: "Next steps",
+    check_email: "Check your Email",
+    email_desc: "A confirmation email has been sent with your application receipt. All further communications will be made via email.",
+    schedule_interview: "Schedule Interview",
+    sched_desc: "Once your application has been processed (usually within 3-5 business days), you will need to schedule your visa interview at the nearest U.S. embassy or consulate. Be sure to bring your passport and supporting documents to your interview.",
   },
   es: {
     // landing page
@@ -228,7 +243,25 @@ export const translations = {
     travel_purpose: "Documento de propósito de viaje",
     travel_purpose_hint: "Una copia o imagen clara de un documento de respaldo de viaje (ej. cartas de invitación, reservas de hotel)",
     findoc: "Documento financiero",
-    findoc_hint: "Una copia o imagen clara de un estado de cuenta bancario u otra prueba de solvencia económica"
+    findoc_hint: "Una copia o imagen clara de un estado de cuenta bancario u otra prueba de solvencia económica",
+    // review
+    review_title: "Revise su solicitud",
+    review_subtitle: "Revise toda la información cuidadosamente antes de enviar. Puede regresar para editar cualquier sección.",
+    affirmation: "Declaro que toda la información proporcionada en esta solicitud es verdadera y correcta según mi leal saber y entender. Entiendo que cualquier declaración falsa puede resultar en la denegación de mi solicitud de visa y puede afectar futuras solicitudes.",
+    submit: "Enviar solicitud",
+    full_name: "Nombre completo",
+    travel_dates: "Fechas de viaje",
+    us_address: "Dirección en EE. UU.",
+    // completion
+    success_title: "¡Solicitud enviada con éxito!",
+    success_subtitle: "Su solicitud de visa ha sido recibida y está siendo procesada.",
+    app_num: "Número de solicitud",
+    save_num: "Guarde este número para rastrear su solicitud",
+    next_steps: "Próximos pasos",
+    check_email: "Revise su correo electrónico",
+    email_desc: "Se ha enviado un correo de confirmación con el recibo de su solicitud. Todas las comunicaciones futuras se realizarán por correo electrónico.",
+    schedule_interview: "Programar entrevista",
+    sched_desc: "Una vez que su solicitud haya sido procesada (generalmente dentro de 3 a 5 días hábiles), deberá programar su entrevista de visa en la embajada o consulado de EE. UU. más cercano. Asegúrese de llevar su pasaporte y documentos de respaldo a la entrevista.",
 
   },
     "cn": {
@@ -342,7 +375,24 @@ export const translations = {
     travel_purpose: "旅行目的文件",
     travel_purpose_hint: "旅行支持文件的清晰扫描件或图片（例如：邀请函、酒店预订单）",
     findoc: "财务证明文件",
-    findoc_hint: "银行对账单或其他财务支持证明的清晰扫描件或图片"
+    findoc_hint: "银行对账单或其他财务支持证明的清晰扫描件或图片",
+    // review
+    review_title: "审核您的申请",
+    review_subtitle: "请在提交前仔细检查所有信息。您可以返回修改任何部分。",
+    affirmation: "本人确认在本申请中提供的所有信息均真实、准确。本人理解，任何虚假陈述可能导致签证申请被拒，并可能影响未来的申请。",
+    submit: "提交申请",
+    full_name: "姓名",
+    travel_dates: "旅行日期",
+    us_address: "美国地址",
+    success_title: "申请提交成功！",
+    success_subtitle: "您的签证申请已收到并正在处理中。",
+    app_num: "申请编号",
+    save_num: "请保存此编号以便查询您的申请进度",
+    next_steps: "下一步",
+    check_email: "检查您的电子邮箱",
+    email_desc: "确认邮件已发送至您的邮箱，其中包含申请收据。后续所有通知将通过电子邮件发送。",
+    schedule_interview: "安排面谈",
+    sched_desc: "在您的申请处理完成后（通常为 3–5 个工作日），您需要在最近的美国大使馆或领事馆预约签证面谈。请务必携带您的护照和相关支持文件。",
   }
   // admin users can add more languages here
 };

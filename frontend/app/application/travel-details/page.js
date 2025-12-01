@@ -41,12 +41,6 @@ export default function TravelDetailsPage() {
       const [errors, setErrors] = useState({});
       const [submitted, setSubmitted] = useState(false);
     
-      const setFieldWithSave = (field, value) => {
-        setField((prev) => ({ ...prev, [field]: value }));
-        setErrors((prev) => ({ ...prev, [field]: undefined }));
-        setSubmitted(false);
-      };
-    
       const validate = (data) => {
         const newErrors = {};
     
@@ -111,7 +105,7 @@ export default function TravelDetailsPage() {
           <VisaStepIndicator currentStep={3} steps={steps} />
           </div>
 
-           <div className="w-full mx-auto p-6 bg-white shadow-lg rounded-xl border border-gray-200">
+           <div className="w-full mx-auto p-6 bg-white rounded-xl border border-gray-200">
             <h2 className="text-3xl font-semibold mb-2">
               {t("travel_title")}
             </h2>
@@ -153,7 +147,7 @@ export default function TravelDetailsPage() {
                         </option>
                       ))}
                   </Select>
-                  {errors.purposeofTravel && (
+                  {errors.purposeOfTravel && (
                     <ErrorMessage>{errors.purposeOfTravel}</ErrorMessage>
                   )}
                 </FormGroup>
