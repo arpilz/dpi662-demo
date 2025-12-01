@@ -64,6 +64,9 @@ export const translations = {
     last_name_p: "Enter your last name",
     dob: "Date of birth",
     dob_p: "MM/DD/YYYY",
+    month: "Month",
+    day: "Day",
+    year: "Year",
     nationality: "Nationality",
     nationality_p: "-- Select Nationality --",
     ppn: "Passport number",
@@ -160,6 +163,9 @@ export const translations = {
 
   },
   es: {
+    month: "Mes",
+    day: "Día",
+    year: "Año",
     // landing page
     page_title: "Solicitud de visa de no inmigrante",
     header_title: "Solicitud de visa de no inmigrante",
@@ -318,6 +324,9 @@ export const translations = {
 
   },
   "cn": {
+    "day": "日",
+    "month": "月",
+    "year": "年",
     "page_title": "非移民签证申请",
     "header_title": "非移民签证申请",
     "header_subtitle": "美国国务院 — 领事事务局",
@@ -472,6 +481,9 @@ export const translations = {
     login: "继续申请",
   },
   fr: {
+    "day": "Jour",
+    "month": "Mois",
+    "year": "Année",
     "page_title": "Demande de visa non-immigrant",
     "header_title": "Demande de visa non-immigrant",
     "header_subtitle": "Département d’État des États-Unis — Bureau des affaires consulaires",
@@ -626,6 +638,9 @@ export const translations = {
     "login": "Reprendre la demande"
   },
   de: {
+    "day": "Tag",
+    "month": "Monat",
+    "year": "Jahr",
     "page_title": "Antrag auf ein Nichteinwanderungsvisum",
     "header_title": "Antrag auf ein Nichteinwanderungsvisum",
     "header_subtitle": "U.S. Außenministerium — Büro für konsularische Angelegenheiten",
@@ -781,6 +796,9 @@ export const translations = {
     "login": "Antrag fortsetzen"
   },
   ar: {
+  "day": "يوم",
+  "month": "شهر",
+  "year": "سنة",
   "page_title": "طلب تأشيرة غير المهاجرين",
   "header_title": "طلب تأشيرة غير المهاجرين",
   "header_subtitle": "وزارة الخارجية الأمريكية — مكتب الشؤون القنصلية",
@@ -935,6 +953,9 @@ export const translations = {
   "login": "استئناف الطلب"
   },
   hi: {
+  "day": "दिन",
+  "month": "महीना",
+  "year": "साल",
   "page_title": "गैर-आप्रवासी वीज़ा आवेदन",
   "header_title": "गैर-आप्रवासी वीज़ा आवेदन",
   "header_subtitle": "अमेरिकी विदेश विभाग — वाणिज्यिक मामलों का ब्यूरो",
@@ -1092,6 +1113,9 @@ export const translations = {
   "login": "आवेदन पुनः आरंभ करें"
   },
   bn: {
+  "day": "দিন",
+  "month": "মাস",
+  "year": "বছর",
   "page_title": "নন-ইমিগ্র্যান্ট ভিসা আবেদন",
   "header_title": "নন-ইমিগ্র্যান্ট ভিসা আবেদন",
   "header_subtitle": "মার্কিন যুক্তরাষ্ট্রের পররাষ্ট্র দপ্তর — কনস্যুলার বিষয়ক ব্যুরো",
@@ -1247,6 +1271,9 @@ export const translations = {
   "login": "আবেদন পুনরায় চালু করুন"
   },
   he: {
+  "day": "יום",
+  "month": "חודש",
+  "year": "שנה",
   "page_title": "בקשת ויזה ללא הגירה",
   "header_title": "בקשת ויזה ללא הגירה",
   "header_subtitle": "משרד החוץ של ארצות הברית — הלשכה לענייני קונסוליה",
@@ -1401,6 +1428,9 @@ export const translations = {
   "login": "המשך בקשה"
   },
   id: {
+    "day": "Hari",
+    "month": "Bulan",
+    "year": "Tahun",
     "page_title": "Aplikasi Visa Nonimigran",
     "header_title": "Aplikasi Visa Nonimigran",
     "header_subtitle": "Departemen Luar Negeri AS — Biro Urusan Konsuler",
@@ -1555,6 +1585,9 @@ export const translations = {
     "login": "Lanjutkan Aplikasi"
   },
   it: {
+    "day": "Giorno",
+    "month": "Mese",
+    "year": "Anno",  
     "page_title": "Domanda per Visto Non Immigrante",
     "header_title": "Domanda per Visto Non Immigrante",
     "header_subtitle": "Dipartimento di Stato degli Stati Uniti — Ufficio per gli Affari Consolari",
@@ -1709,6 +1742,9 @@ export const translations = {
     "login": "Riprendi la Domanda"
   },
   ja: {
+    "day": "日",
+    "month": "月",
+    "year": "年",
     page_title: "非移民ビザ申請",
     header_title: "非移民ビザ申請",
     header_subtitle: "米国国務省 — 領事業務局",
@@ -1864,6 +1900,9 @@ export const translations = {
     login: "申請を再開"
   },
   ko: {
+  "day": "일",
+  "month": "월",
+  "year": "년",
   "page_title": "비이민 비자 신청",
   "header_title": "비이민 비자 신청",
   "header_subtitle": "미국 국무부 — 영사국",
@@ -2020,6 +2059,9 @@ export const translations = {
   "login": "신청 계속하기"
   },
   fa: {
+    "day": "روز",
+    "month": "ماه",
+    "year": "سال",
     "page_title": "درخواست ویزای غیرمهاجرتی",
     "header_title": "درخواست ویزای غیرمهاجرتی",
     "header_subtitle": "وزارت امور خارجه ایالات متحده — اداره امور کنسولی",
@@ -2176,6 +2218,9 @@ export const translations = {
     "login": "ادامه درخواست"
   },
   th: {
+  "day": "วัน",
+  "month": "เดือน",
+  "year": "ปี",
   "page_title": "แบบฟอร์มขอรับวีซ่าชั่วคราวที่มิใช่ผู้อพยพ",
   "header_title": "แบบฟอร์มขอรับวีซ่าชั่วคราวที่มิใช่ผู้อพยพ",
   "header_subtitle": "กระทรวงการต่างประเทศสหรัฐอเมริกา — สำนักกิจการกงสุล",
@@ -2331,6 +2376,9 @@ export const translations = {
   "login": "ดำเนินการต่อคำขอ"
   },
   ha: {
+  "day": "Rana",
+  "month": "Wata",
+  "year": "Shekara",
   "page_title": "Aikace-aikacen Bizar Marar Zama",
   "header_title": "Aikace-aikacen Bizar Marar Zama",
   "header_subtitle": "Ma’aikatar Harkokin Waje ta Amurka — Hukumar Harkokin Jakadanci",
@@ -2485,6 +2533,9 @@ export const translations = {
   "login": "Dawo da Aikace-aikace"
   },
   pa: {
+    "day": "ਦਿਨ",
+    "month": "ਮਹੀਨਾ",
+    "year": "ਸਾਲ",
     "page_title": "ਗੈਰ-ਆਵਾਸੀ ਵੀਜ਼ਾ ਅਰਜ਼ੀ",
     "header_title": "ਗੈਰ-ਆਵਾਸੀ ਵੀਜ਼ਾ ਅਰਜ਼ੀ",
     "header_subtitle": "ਯੂ.ਐਸ. ਡਿਪਾਰਟਮੈਂਟ ਆਫ ਸਟੇਟ — ਬਿਉਰੋ ਆਫ ਕੌਂਸੂਲਰ ਅਫੇਅਰਜ਼",
@@ -2641,6 +2692,9 @@ export const translations = {
     "login": "ਅਰਜ਼ੀ ਮੁੜ ਸ਼ੁਰੂ ਕਰੋ"
   },
   pl: {
+    "day": "Dzień",
+    "month": "Miesiąc",
+    "year": "Rok",
     "page_title": "Wniosek o Wizę Nieimigracyjną",
     "header_title": "Wniosek o Wizę Nieimigracyjną",
     "header_subtitle": "Departament Stanu USA — Biuro Spraw Konsularnych",
@@ -2796,6 +2850,9 @@ export const translations = {
     "login": "Wznów Wniosek"
   },
   ru: {
+  "day": "День",
+  "month": "Месяц",
+  "year": "Год",
   "page_title": "Заявление на неиммиграционную визу",
   "header_title": "Заявление на неиммиграционную визу",
   "header_subtitle": "Государственный департамент США — Бюро консульских дел",

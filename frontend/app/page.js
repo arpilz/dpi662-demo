@@ -191,14 +191,14 @@ export default function HomePage() {
               {t("start")}
             </Button></Link>
             
-            <Button
+            <Link href="/application/resume"><Button
               type="button"
               outline
               className="width-full"
             >
               {/* retrieve existing application */}
               {t("retrieve")}
-            </Button>
+            </Button></Link>
         </div>
 
           </section>

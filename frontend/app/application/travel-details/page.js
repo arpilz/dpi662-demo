@@ -165,7 +165,6 @@ export default function TravelDetailsPage() {
                   className="w-full rounded-md!"
                   validationStatus={errors.arrivalDate ? "error" : undefined}
                   placeholder={t("dob_p")}
-                  minDate={new Date().toISOString().split("T")[0]}
                 />
 
                 {/* departure date */}
@@ -180,7 +179,6 @@ export default function TravelDetailsPage() {
                   className="w-full rounded-md!"
                   validationStatus={errors.departureDate ? "error" : undefined}
                   placeholder={t("dob_p")}
-                  minDate={new Date().toISOString().split("T")[0]}
                 />
               </div>
 

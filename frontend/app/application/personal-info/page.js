@@ -184,7 +184,6 @@ export default function PersonalInfoPage() {
                   className="w-full rounded-md!"
                   validationStatus={errors.dateOfBirth ? "error" : undefined}
                   placeholder={t("dob_p")}
-                  maxDate={new Date().toISOString().split("T")[0]}
                 />
 
                 {/* Nationality */}
@@ -195,6 +194,7 @@ export default function PersonalInfoPage() {
                   <Label htmlFor="nationality">
                     {t("nationality")} <span className="text-red-600">*</span>
                   </Label>
+                  <span className="block text-xs text-white mb-1">{t("nationality")}</span>
                   <Select
                     id="nationality"
                     name="nationality"

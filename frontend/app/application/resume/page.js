@@ -1,7 +1,7 @@
 "use client";
 
 import { GovBanner, GridContainer, Button, Form, Label, Select, Alert, FormGroup, ErrorMessage } from "@trussworks/react-uswds";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "@/components/LanguageProvider";
 import AgencyHeader from "@/components/StateHeader";
@@ -12,9 +12,16 @@ import { useFormData } from "@/app/formsaver";
 export default function ResumeApplicationPage() {
   const { t } = useLanguage();
   const router = useRouter();
-  const { formData, setField, setAll } = useFormData();
+  const { formData, setField, setAll, resetForm } = useFormData();
 
   const [errors, setErrors] = useState({});
+
+    // clear out form so the login form is empty (it should just be a different field)
+    // however. in the front-end only it doesn't really matter and i'm too lazy
+    // to give it a different argument
+    useEffect(() => {
+      resetForm();
+    }, []);
 
   const validate = (data) => {
     const newErrors = {};
@@ -47,15 +54,15 @@ export default function ResumeApplicationPage() {
         // personal info
         firstName: "John",
         lastName: "Doe",
-        dateOfBirth: "07/05/1985",
+        dateOfBirth: "1985-07-05",
         nationality: t("Canada"),
         passportNumber: "P123456AA",
         email: "johndoe@example.com",
         phoneNumber: "+1 (888) 601-1616",
         // travel details
         purposeOfTravel: t("Education/Study"),
-        arrivalDate: "03/07/2026",
-        departureDate: "12/20/2027",
+        arrivalDate: "2026-03-07",
+        departureDate: "2027-12-20",
         addressStay: "1 Oxford St., Cambridge, MA, 02138",
         // supporting documents
         passportBioFileName: "doe_passport.pdf",
@@ -92,7 +99,6 @@ export default function ResumeApplicationPage() {
                   type="email"
                   placeholder={t("email_p")}
                   required
-                  value={formData.email}
                   error={errors.email}
                   onChange={(value) => setField("email", value)}
                   className="w-full"
@@ -107,10 +113,9 @@ export default function ResumeApplicationPage() {
                 label={t("access_code")}
                 placeholder={t("access_code_p")}
                 required
-                value={formData.passportNumber}
                 error={errors.passportNumber}
-                onChange={(value) => setField("passportNumber", value)}
                 className="w-full"
+                onChange={(value) => setField("passportNumber", value)}
                 validationStatus={errors.passportNumber ? "error" : undefined}
                 hint={t("access_code_hint")}
               />
