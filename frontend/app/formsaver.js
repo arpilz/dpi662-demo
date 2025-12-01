@@ -7,20 +7,26 @@ const FormDataContext = createContext(null);
 const STORAGE_KEY = "visa-application-data";
 
 const defaultData = {
-    // personal info
-    firstName: "",
-    lastName: "",
-    dateOfBirth: "",
-    nationality: "",
-    passportNumber: "",
-    email: "",
-    phoneNumber: "",
-    // travel details
-    purposeOfTravel: "",
-    arrivalDate: "",
-    departureDate: "",
-    addressStay: "",
-  
+  // visa type
+    visaType: "",
+  // personal info
+  firstName: "",
+  lastName: "",
+  dateOfBirth: "",
+  nationality: "",
+  passportNumber: "",
+  email: "",
+  phoneNumber: "",
+  // travel details
+  purposeOfTravel: "",
+  arrivalDate: "",
+  departureDate: "",
+  addressStay: "",
+  // supporting documents
+  passportBioFileName: "",
+  passportPhotoFileName: "",
+  finDocFileName: "",
+  purposeDocFileName: "",
 };
 
 export function FormDataProvider({ children }) {
@@ -40,7 +46,7 @@ export function FormDataProvider({ children }) {
     }
   }, []);
 
-  // Save whenever formData changes
+  // save when formdata changes
   useEffect(() => {
     if (typeof window === "undefined") return;
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));

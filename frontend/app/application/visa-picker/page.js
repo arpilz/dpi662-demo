@@ -7,10 +7,12 @@ import Link from "next/link";
 import TitleLanguage from "@/components/TitleLanguage";
 import VisaStepIndicator from "@/components/VisaStepIndicator";
 import FormSelector from "@/components/FormSelector";
+import { useFormData } from "@/app/formsaver";
 
 export default function VisaPickerPage() {
 
   const { t } = useLanguage();
+  const { formData, setField } = useFormData();
   
   const steps = [
     { id: "visa_type", label: t("visa_type") },
@@ -19,6 +21,10 @@ export default function VisaPickerPage() {
     { id: "documents", label: t("documents") },
     { id: "review",  label: t("review") },
   ];
+
+  const handleVisaSelect = (visaKey) => {
+    setField("visaType", visaKey);
+  };
 
   return (
     <>
@@ -48,12 +54,12 @@ export default function VisaPickerPage() {
 
           {/* grid of visas to pick from (in this demo, they all lead to the same form) */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-black">
-            <FormSelector title={t('tourbiz')} description={t('tourbiz_desc')} href="/application/personal-info" icon="/airplane.svg" />
-            <FormSelector title={t('student')}description={t('student_desc')} href="/application/personal-info" icon="/mortarboard.svg" />
-            <FormSelector title={t('work')} description={t('work_desc')} href="/application/personal-info" icon="/briefcase.svg" />
-            <FormSelector title={t('exchange')} description={t('exchange_desc')} href="/application/personal-info" icon="/people.svg" />
-            <FormSelector title={t('fiance')} description={t('fiance_desc')} href="/application/personal-info" icon="/heart.svg" />
-            <FormSelector title={t('intracomp')} description={t('intracomp_desc')} href="/application/personal-info" icon="/buildings.svg" />
+            <FormSelector title={t('tourbiz')} description={t('tourbiz_desc')} href="/application/personal-info" icon="/airplane.svg" onClick={() => handleVisaSelect(t('tourbiz'))} />
+            <FormSelector title={t('student')}description={t('student_desc')} href="/application/personal-info" icon="/mortarboard.svg" onClick={() => handleVisaSelect(t('student'))} />
+            <FormSelector title={t('work')} description={t('work_desc')} href="/application/personal-info" icon="/briefcase.svg" onClick={() => handleVisaSelect(t('work'))} />
+            <FormSelector title={t('exchange')} description={t('exchange_desc')} href="/application/personal-info" icon="/people.svg" onClick={() => handleVisaSelect(t('exchange'))} />
+            <FormSelector title={t('fiance')} description={t('fiance_desc')} href="/application/personal-info" icon="/heart.svg" onClick={() => handleVisaSelect(t('fiance'))} />
+            <FormSelector title={t('intracomp')} description={t('intracomp_desc')} href="/application/personal-info" icon="/buildings.svg" onClick={() => handleVisaSelect(t('intracomp'))} />
           </div>
         
           {/* hint for user */}

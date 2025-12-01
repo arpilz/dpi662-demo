@@ -112,7 +112,7 @@ export default function PersonalInfoPage() {
             <VisaStepIndicator currentStep={2} steps={steps} />
           </div>
 
-          <div className="w-full mx-auto p-6 bg-white shadow-lg rounded-xl border border-gray-200">
+          <div className="w-full mx-auto p-6 bg-white rounded-xl border border-gray-200">
             <h2 className="text-3xl font-semibold mb-2">
               {t("personal_title")}
             </h2>

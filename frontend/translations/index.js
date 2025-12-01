@@ -101,6 +101,20 @@ export const translations = {
     "Employment": "Employment",
     "Medical Treatment": "Medical Treatment",
     "Education/Study": "Education/Study",
+    //supporting documents
+    documents_title: "Upload Supporting Documents",
+    documents_subtitle: "Please upload clear, legible copies of the following documents. Accepted formats: PDF, JPG, PNG (max 25MB per file).",
+    remove: "Remove",
+    pphoto: "Passport Photo",
+    pphoto_hint: "2x2 inch photo taken within the last 6 months",
+    ppbio: "Passport Bio Page",
+    ppbio_hint: "A clear scan or image of your passport bio page (photo page)",
+    travel_purpose: "Travel Purpose Document",
+    travel_purpose_hint: "A clear scan or image of a travel support document (e.g. invitation letters, hotel bookings)",
+    findoc: "Financial Document",
+    findoc_hint: "A clear scan or image of a bank statement or other proof of financial support",
+
+
   },
   es: {
     // landing page
@@ -202,7 +216,20 @@ export const translations = {
     "Business Meeting/Conference": "Reunión/Conferencia de negocios",
     "Employment": "Empleo",
     "Medical Treatment": "Tratamiento médico",
-    "Education/Study": "Educación/Estudios"
+    "Education/Study": "Educación/Estudios",
+    // supporting documents
+    documents_title: "Subir documentos de respaldo",
+    documents_subtitle: "Suba copias claras y legibles de los siguientes documentos. Formatos aceptados: PDF, JPG, PNG (máx. 25MB por archivo).",
+    remove: "Eliminar",
+    pphoto: "Foto de pasaporte",
+    pphoto_hint: "Foto de 2x2 pulgadas tomada en los últimos 6 meses",
+    ppbio: "Página biográfica del pasaporte",
+    ppbio_hint: "Una copia o imagen clara de la página biográfica de su pasaporte (página con foto)",
+    travel_purpose: "Documento de propósito de viaje",
+    travel_purpose_hint: "Una copia o imagen clara de un documento de respaldo de viaje (ej. cartas de invitación, reservas de hotel)",
+    findoc: "Documento financiero",
+    findoc_hint: "Una copia o imagen clara de un estado de cuenta bancario u otra prueba de solvencia económica"
+
   },
     "cn": {
     "page_title": "非移民签证申请",
@@ -303,7 +330,19 @@ export const translations = {
     "Business Meeting/Conference": "商务会议/研讨会",
     "Employment": "就业",
     "Medical Treatment": "医疗",
-    "Education/Study": "教育/学习"
+    "Education/Study": "教育/学习",
+    // supporting docs
+    documents_title: "上传支持文件",
+    documents_subtitle: "请上传以下文件的清晰可读副本。接受的格式：PDF、JPG、PNG（每个文件最大 25MB）。",
+    remove: "删除",
+    pphoto: "护照照片",
+    pphoto_hint: "2x2 英寸、近 6 个月内拍摄的照片",
+    ppbio: "护照资料页",
+    ppbio_hint: "护照资料页（带照片页）的清晰扫描件或图片",
+    travel_purpose: "旅行目的文件",
+    travel_purpose_hint: "旅行支持文件的清晰扫描件或图片（例如：邀请函、酒店预订单）",
+    findoc: "财务证明文件",
+    findoc_hint: "银行对账单或其他财务支持证明的清晰扫描件或图片"
   }
   // admin users can add more languages here
 };

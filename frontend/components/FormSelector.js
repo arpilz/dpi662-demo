@@ -33,8 +33,8 @@ export default function FormSelector({
       onClick={onClick}
       className={clsx(
         "flex items-center gap-4 p-4 md:p-5 w-full text-left rounded-xl transition shadow-sm border bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
-        "hover:border-blue-500 hover:bg-blue-50 hover:shadow-md hover:-translate-y-px",
-        selected && "border-blue-500 bg-blue-50 shadow-md",
+        "hover:border-blue-500 hover:bg-blue-50 hover:-translate-y-px",
+        selected && "border-blue-500 bg-blue-50",
         className
       )}
       {...rest}
